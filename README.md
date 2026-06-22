@@ -4,7 +4,7 @@ Yksinkertainen web-pohjainen tapahtumakalenteri, jonka avulla voi lisätä, sela
 
 Rakennettu osana web-kehityksen opiskelua — tavoitteena oppia PHP:n ja MySQL:n yhteiskäyttöä
 
-<img width="227" height="229" alt="Näyttökuva 2026-06-22 234734" src="https://github.com/user-attachments/assets/74ac2ba5-09a3-445a-95db-85358b361aba" />
+<img width="227" height="229" alt="Näyttökuva 2026-06-22 234734" src="https://github.com/user-attachments/assets/74ac2ba5-09a3-445a-95db-85358b361aba" /><br>
 
 <img width="405" height="423" alt="Näyttökuva 2026-06-22 234954" src="https://github.com/user-attachments/assets/ac05fee0-5b48-431e-89db-2c15e4964106" />
 
