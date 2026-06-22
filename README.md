@@ -8,7 +8,7 @@ Rakennettu osana web-kehityksen opiskelua — tavoitteena oppia PHP:n ja MySQL:n
 
 <img width="405" height="423" alt="Näyttökuva 2026-06-22 234954" src="https://github.com/user-attachments/assets/ac05fee0-5b48-431e-89db-2c15e4964106" />
 
-<img width="549" height="509" alt="Näyttökuva 2026-06-23 001206" src="https://github.com/user-attachments/assets/be4e93e5-6e91-4682-b678-0e83dd899583" />
+<img width="549" height="125" alt="Näyttökuva 2026-06-23 001206" src="https://github.com/user-attachments/assets/be4e93e5-6e91-4682-b678-0e83dd899583" />
 
 ## Teknologiat
 
