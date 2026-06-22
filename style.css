@@ -1,0 +1,194 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    
+    /* Marginaalit ja rivin pituus*/
+    padding: 20px 20px 20px 40px;
+    max-width: 600px; 
+}
+
+
+h1 {
+    color: #111;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #444;
+    margin-top: 30px;
+    border-bottom: 20px;
+}
+
+/* Linkit ja painikkeet */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lisää tapahtuma -linkki*/
+a[href="add.php"] {
+    font-weight: bold;
+    color: #008844;
+    margin-top: 15px;
+}
+
+/* Poista-linkki */
+a[href^="delete.php"] {
+    color: #cc0000;
+    font-size: 0.9em;
+}
+
+/* Tapahtumakortti */
+.event {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #0066cc; 
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Tapahtuman sisällä */
+.event strong {
+    display: block;
+    font-size: 1.1em;
+}
+
+.event span {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.event p {
+    margin: 10px 0;
+}
+
+
+/* Pienoiskalenteri */
+
+.main-container {
+    max-width: 600px;
+}
+
+/* Selauslinkit */
+.nav-links {
+    margin-bottom: 15px;
+}
+
+/* Kalenteritaulukko */
+.mini-calendar {
+    width: 100%;
+    max-width: 350px; 
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Viikonpäivien otsikot */
+.mini-calendar th {
+    background-color: #f2f2f2;
+    color: #555;
+    font-size: 0.85em;
+    padding: 8px 4px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Kalenterin solut */
+.mini-calendar td {
+    width: 14.28%; 
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.95em;
+    color: #333;
+    border: 1px solid #f0f0f0;
+}
+
+/* Päivä jona tapahtuma */
+.mini-calendar td.has-event {
+    background-color: #e6f4ea;
+    color: #137333;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Kuluva päivä */
+.mini-calendar td.today {
+    outline: 2px solid #0066cc;
+    font-weight: bold;
+}
+
+
+.btn-add {
+    font-weight: bold;
+    color: #008844 !important;
+}
+
+.btn-delete {
+    color: #cc0000 !important;
+    font-size: 0.9em;
+}
+
+/* Suurennetaan pääsäiliötä, jotta kaksi elementtiä mahtuu vierekkäin */
+.main-container {
+    max-width: 900px; 
+}
+
+/* Kalenteri ja lista vierekkäin */
+.calendar-layout {
+    display: flex;
+    gap: 40px;         
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+
+.layout-left {
+    flex: 0 0 350px;    
+}
+
+
+.layout-right {
+    flex: 1;     
+}
+
+.layout-right h2 {
+    margin-top: 0;
+}
+
+.no-events {
+    color: #666;
+    font-style: italic;
+}
+
+/* RESPONSIIVISUUS */
+/* Jos ruutu on kapeampi kuin 768px, siirretään osiot allekkain */
+@media (max-width: 768px) {
+    .calendar-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .layout-left {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+    
+    .mini-calendar {
+        max-width: 100%;
+    }
+}
